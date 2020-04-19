@@ -1,0 +1,21 @@
+.item-block {
+    width: 220px;
+    height: 200px;
+    margin: 10px;
+    justify-content: center;
+    float: left;
+    display: inline-grid;
+    box-shadow: -2px 2px 7px black;
+}
+
+.display_image {
+    width: 130px;
+}
+
+.button {
+    width: 37px;
+    padding: 4px;
+    margin: 17px;
+    border-radius: 12px;
+    background: orange;
+}

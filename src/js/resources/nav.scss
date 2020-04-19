@@ -1,0 +1,29 @@
+.topnav {
+  overflow: hidden; /*overflow property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area*/
+  background-color:cornflowerblue;
+  width: 84.7rem;
+}
+
+.topnav lable {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; // to remove underline
+  font-size: 17px;
+  width:230px;
+  
+  .cart {
+    background: black;
+  }
+}
+
+.topnav lable:hover {
+  background-color:rgb(246, 86, 11);
+  color: rgb(255, 255, 255);
+}
+
+.topnav lable.active {
+  background-color: rgb(246, 86, 11);
+  color: rgb(255, 255, 255);
+}
