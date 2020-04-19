@@ -1,17 +1,17 @@
 import React from 'react'
-import '../resources/nav.scss' 
+import '../resources/nav.scss'
+import { Link } from 'react-router-dom'
 
-export default function NavBar() {
+export default function NavBar(props) {
+    let val = props.noOfItems
     return (
         <>
             <div className="topnav">
                 <>
-                <lable className="active" >Home</lable>
-                <lable >Brthday</lable>
-                <lable >Aniversery</lable>
-                <lable >About</lable>
+                <a className="active" >Home</a>
                 </>
-                <lable className='cart' href="#about">Cart</lable>
+                <Link className='cart' to="/cart">My cart</Link>
+                <label className='cart-count'>{val}</label>
             </div>
         </>
     )

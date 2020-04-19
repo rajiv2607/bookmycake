@@ -94,16 +94,6 @@ const addToCartReducer = (state = initialState, action) => {
                     }
                     
                 }
-
-
-
-                console.log(state.get("cakeName"))
-                if(state.get("cakeName").length>1){
-                    let newQty = state.get(action.cakeName) + 1
-                   return state.set(action.cakeName, newQty)
-                } else {
-                    return state.set("cakeName", action.cakeName).set("quantity",1);
-                }
             }
 
             case ActionConstants.QUANTITY_DECREASED:

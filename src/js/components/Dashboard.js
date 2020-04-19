@@ -4,19 +4,17 @@ import Header from './Header'
 import NavBar from './NavBar'
 import DisplayBlocks from './DisplayBlocks'
 import * as actions from '../actions/Actions';
-import Cart from './Cart'
-import store from '../utils/createStore';
-import TotalWorth from './totalWorth'
+import '../resources/dashboard.scss'
 
 
  class Dashboard extends React.Component {
 
      handleInc(e) {
-        store.dispatch(actions.increment(e.id))
+        this.props.addItem(e.id)
     }
 
     handleDec(e) {
-         store.dispatch(actions.decrement(e.id))
+         this.props.deleteItem(e.id)   
     }
 
     render() {
@@ -24,22 +22,12 @@ import TotalWorth from './totalWorth'
         this.props.items.items.map((data, index) => {
                displayBlock.push(<DisplayBlocks key={index}  inc = {this.handleInc.bind(this)} dec={this.handleDec.bind(this)} obj={data}></DisplayBlocks>)
         })
-
-        let addedItems = []
-        this.props.items.addedItems.map((data, index) => {
-            addedItems.push(<Cart key={index}  obj={data} totalPrice = {this.props.items.total}></Cart>)
-        })
-
-        var totalAmout = this.props.items.total
-
         return(
-            <>
+            <div className='container'>
             <Header/>
-             <NavBar/>
+             <NavBar noOfItems = {this.props.addedItems.length}/>
              {displayBlock}
-             {addedItems}
-             <TotalWorth total = {totalAmout}/>
-             </>
+             </div>
         );
     }
 }
@@ -47,14 +35,15 @@ import TotalWorth from './totalWorth'
 const mapStateToProps = (state)=>{
     return {
         items: state.items,
-        addedItems: state.addedItems,
-        total: state.total
+        addedItems: state.items.addedItems,
     }
   }
 const mapDispatchToProps= (dispatch)=>{
     
     return{
-        // addToCart: (id)=>{dispatch(addToCart(id))}
+         addItem: (id)=>{dispatch(actions.increment(id))},
+         deleteItem : (id)=>{dispatch(actions.decrement(id))}
+
     }
 }
 
