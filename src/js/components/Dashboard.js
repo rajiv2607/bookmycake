@@ -5,6 +5,7 @@ import NavBar from './NavBar'
 import DisplayBlocks from './DisplayBlocks'
 import * as actions from '../actions/Actions';
 import '../resources/dashboard.scss'
+import { Card, Icon, Image } from 'semantic-ui-react'
 
 
  class Dashboard extends React.Component {
