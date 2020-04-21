@@ -1,10 +1,14 @@
 .topnav {
-  overflow: hidden; /*overflow property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area*/
-  background-color:dimgrey;
-  width: 84.7rem;
+  overflow: hidden;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  max-height: 3rem;
+  position: fixed;
+  justify-content: left;
+  width: 10rem;
+  margin: -5rem 0rem 3rem;
 }
-
-
 
 .topnav a {
   float: left;
@@ -21,12 +25,9 @@
   }
 }
 .cart-count {
-    top: 14px;
-    background: orange;
-    border-radius: 2rem;
-    padding: 7px;
-    position: relative;
-    height: 16px;
+  background: orange;
+    margin-right: 69rem;
+    padding: 10px;
 }
 
 html{

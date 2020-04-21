@@ -1,15 +1,25 @@
 .header {
-    background: #ee6e73;
-    display: inline-block;
-    position: relative;
-    font-size: 90px;
-    box-shadow: 12px 9px 2px;
-    width: 141%;
-    height: 6rem;
-    margin: 10px;
-    margin-bottom: 12px;
+    overflow: hidden;
+    display: flex;
+    padding-right: -4rem;
+    height: 7rem;
+    margin-left: 17rem;
+    justify-content: left;
+    text-decoration: underline;
 
-
+    .searchbox {
+    margin-top: auto;
+    }
+    .searchbutton {
+    margin-top: auto;
+    }
+    .header-label-name{
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 6rem;
+        font-variant-caps: normal;
+    }
+   
 }
 
 html {

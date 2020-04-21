@@ -17,12 +17,11 @@ export default class  DisplayBlock extends React.Component {
 
         return(
             <div className='item-block'>
-            <label>{this.props.obj.name}</label>
+            <label className='cake-name'>{this.props.obj.name}</label>
             <img className='display_image' src={this.props.obj.src} alt=""/>
             <div>
-            <button className='button' onClick={this.handleDecrement.bind(this)}>-</button>
-            <label>{this.props.obj.qty}</label>
-            <button className='button' onClick={this.handleIncrement.bind(this)}>+</button>
+            <button className='add-to-cart' onClick={this.handleIncrement.bind(this)}>Add to Cart</button>
+            <label className='display_price'>Price: {this.props.obj.price}₹</label>
             </div>
             </div>
         )

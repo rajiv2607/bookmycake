@@ -15,7 +15,7 @@ const initialState = {
             name: "Golden Chocolate",
             price: 300,
             discription: "Old fashioned, buttery golden yellow cake, just as moist and dense as Grandma used to make. Filled and frosted with our house chocolate buttercream. Golden Chocolate Amycakes are decorated with ascending gold sprinkles, chocolate ganache drizzle and dark chocolate curls and flakes.",
-            src: require('../resources/imageShelf/rich-chocolate-cake.png'),
+            src: require('../resources/imageShelf/happy-birthday-cake.jpeg'),
             quantity: 0
         },
         {

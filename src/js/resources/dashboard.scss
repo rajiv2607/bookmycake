@@ -1,4 +1,12 @@
+ :root{
+    background:grey;
+}
+
 .container {
     width: 170%;
     max-width:1280px;  
+}
+
+.showcase-content { 
+    display: flex;
 }

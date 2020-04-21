@@ -27,7 +27,9 @@ import { Card, Icon, Image } from 'semantic-ui-react'
             <div className='container'>
             <Header/>
              <NavBar noOfItems = {this.props.addedItems.length}/>
+             <div className='showcase-content'>
              {displayBlock}
+             </div>
              </div>
         );
     }

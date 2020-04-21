@@ -10,7 +10,7 @@ export default function NavBar(props) {
                 <>
                 <a className="active" >Home</a>
                 </>
-                <Link className='cart' to="/cart">My cart</Link>
+                <Link className='cart' to="/cart">Cart</Link>
                 <label className='cart-count'>{val}</label>
             </div>
         </>

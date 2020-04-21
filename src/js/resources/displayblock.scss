@@ -1,15 +1,33 @@
 .item-block {
-    width: 220px;
-    height: 200px;
-    margin: 10px;
+    width: 19rem;
+    height: 23rem;
+    margin: 50px;
     justify-content: center;
     float: left;
     display: inline-grid;
-    box-shadow: -2px 2px 7px black;
+    box-shadow: -2px -2px 5px black;
+    background: white;
 }
 
 .display_image {
-    width: 130px;
+    width: 17rem;
+}
+
+.display_price {
+    font-size: 1.2rem;
+    padding-left: 90px;
+    color: grey;
+}
+
+.cake-name {
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+.add-to-cart {
+    color: darkslategrey;
+    border-radius: 1rem;
+    border: 2px solid grey
 }
 
 .button {
@@ -18,4 +36,11 @@
     margin: 17px;
     border-radius: 12px;
     background: orange;
+}
+
+.showcase-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
 }
