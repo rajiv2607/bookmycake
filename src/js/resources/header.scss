@@ -25,3 +25,15 @@
 html {
     box-sizing: border-box;
 }
+
+
+@media screen and (max-width: 750px) {
+
+    .header {
+        margin-left: 12rem;
+        .header-label-name{
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
+    }
+}
